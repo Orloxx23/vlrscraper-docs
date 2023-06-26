@@ -1,0 +1,86 @@
+# Get team info
+
+```txt copy filename="GET"
+https://valorant-esports1.p.rapidapi.com/v1/teams/{teamid}
+```
+
+This API provides detailed information about a Valorant team. By making a GET request to this URL with the `teamid` parameter, you will get information such as team name, players, staff, events, results and upcoming events in which the team participates.
+
+## Headers
+
+- `X-RapidAPI-Key`
+- `X-RapidAPI-Host`
+
+## URL Parameters
+
+- `teamid` ID of the team to be consulted.
+
+## Response
+
+```json copy
+{
+  "status": "string",
+  "data": {
+    "info": {
+      "name": "string",
+      "tag": "string",
+      "logo": "string"
+    },
+    "players": [
+      {
+        "url": "string",
+        "user": "string",
+        "name": "string",
+        "img": "string",
+        "country": "string"
+      }
+    ],
+    "staff": [
+      {
+        "url": "string",
+        "user": "string",
+        "name": "string",
+        "tag": "string",
+        "img": "string",
+        "country": "string"
+      }
+    ],
+    "events": [
+      {
+        "name": "string",
+        "results": [
+          "string"
+        ],
+        "year": "string"
+      }
+    ],
+    "results": [
+      {
+        "event": {
+          "name": "string",
+          "logo": "string"
+        },
+        "teams": [
+          {
+            "name": "string",
+            "tag": "string",
+            "logo": "string",
+            "points": "string"
+          }
+        ]
+      }
+    ],
+    "upcoming": [
+      {
+        "name": "string",
+        "results": [
+          "string"
+        ],
+        "year": "string"
+      }
+    ]
+  }
+}
+```
+
+That's it! This documentation will provide you with the information you need to interact with the API and understand the structure of the response. Remember to replace `teamid` in the request URL with the ID of the team you want to query.
