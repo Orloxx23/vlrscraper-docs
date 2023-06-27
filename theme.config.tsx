@@ -23,7 +23,12 @@ const config: DocsThemeConfig = {
   },
   editLink: {
     text: 'Edit this page on GitHub →',
-  }
+  },
+  useNextSeoProps() {
+      return {
+        titleTemplate: '%s | Valorant Esports API',
+      }
+  },
 }
 
 export default config
