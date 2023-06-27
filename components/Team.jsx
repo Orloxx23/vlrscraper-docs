@@ -83,7 +83,7 @@ export default function Team() {
                     {team.results.slice(0, 2).map((match) => (
                       <div className={styles.match} key={match.event.name}>
                         <div className={styles.teamimg}>
-                          <img src={match.teams[0].logo} alt="" />
+                          <img src={match.teams[0].logo} alt="" draggable="false" />
                         </div>
 
                         <div className={styles.matchscore}>
@@ -92,7 +92,7 @@ export default function Team() {
                         </div>
 
                         <div className={styles.teamimg}>
-                          <img src={match.teams[1].logo} alt="" />
+                          <img src={match.teams[1].logo} alt="" draggable="false" />
                         </div>
                       </div>
                     ))}
