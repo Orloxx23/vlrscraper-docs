@@ -4,16 +4,18 @@
 https://valorant-esports1.p.rapidapi.com/v1/teams/{teamid}
 ```
 
-This API provides detailed information about a Valorant team. By making a GET request to this URL with the `teamid` parameter, you will get information such as team name, players, staff, events, results and upcoming events in which the team participates.
+Provides detailed information about a Valorant team. By making a GET request to this URL with the `teamid` parameter, you will get information such as team name, players, staff, events, results and upcoming events in which the team participates.
 
 ## Headers
 
 - `X-RapidAPI-Key`
 - `X-RapidAPI-Host`
 
-## URL Parameters
+## Parameters
 
-- `teamid` ID of the team to be consulted.
+| Parameter | Default | Required | Description                    |
+| :-------- | :-----: | :------: | :----------------------------- |
+| `teamid`   |         |    ✅    | ID of the team to be consulted |
 
 ## Response
 
@@ -48,9 +50,7 @@ This API provides detailed information about a Valorant team. By making a GET re
     "events": [
       {
         "name": "string",
-        "results": [
-          "string"
-        ],
+        "results": ["string"],
         "year": "string"
       }
     ],
@@ -73,9 +73,7 @@ This API provides detailed information about a Valorant team. By making a GET re
     "upcoming": [
       {
         "name": "string",
-        "results": [
-          "string"
-        ],
+        "results": ["string"],
         "year": "string"
       }
     ]
