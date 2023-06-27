@@ -15,7 +15,7 @@ Provides detailed information about a Valorant team. By making a GET request to 
 
 | Parameter | Default | Required | Description                    |
 | :-------- | :-----: | :------: | :----------------------------- |
-| `teamid`   |         |    ✅    | ID of the team to be consulted |
+| `teamid`  |         |    ✅    | ID of the team to be consulted |
 
 ## Response
 
@@ -30,6 +30,7 @@ Provides detailed information about a Valorant team. By making a GET request to 
     },
     "players": [
       {
+        "id": "string",
         "url": "string",
         "user": "string",
         "name": "string",
@@ -39,6 +40,7 @@ Provides detailed information about a Valorant team. By making a GET request to 
     ],
     "staff": [
       {
+        "id": "string",
         "url": "string",
         "user": "string",
         "name": "string",
@@ -49,6 +51,8 @@ Provides detailed information about a Valorant team. By making a GET request to 
     ],
     "events": [
       {
+        "id": "string",
+        "url": "string",
         "name": "string",
         "results": ["string"],
         "year": "string"
@@ -56,6 +60,10 @@ Provides detailed information about a Valorant team. By making a GET request to 
     ],
     "results": [
       {
+        "match": {
+          "id": "string",
+          "url": "string"
+        },
         "event": {
           "name": "string",
           "logo": "string"
@@ -72,9 +80,21 @@ Provides detailed information about a Valorant team. By making a GET request to 
     ],
     "upcoming": [
       {
-        "name": "string",
-        "results": ["string"],
-        "year": "string"
+        "match": {
+          "id": "string",
+          "url": "string"
+        },
+        "event": {
+          "name": "string",
+          "logo": "string"
+        },
+        "teams": [
+          {
+            "name": "string",
+            "tag": "string",
+            "logo": "string"
+          }
+        ]
       }
     ]
   }
