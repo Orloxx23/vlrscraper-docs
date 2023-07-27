@@ -1,6 +1,6 @@
 # Get all players
 
-```txt copy filename="GET"
+```http copy filename="GET"
 https://valorant-esports1.p.rapidapi.com/v1/players
 ```
 
@@ -15,19 +15,19 @@ Get your key and host at [rapidapi.com](https://rapidapi.com/madorlix-F9ZSAPsIt3
 
 ## Parameters
 
-| Parameter      | Default | Required | Description                                                           |
-| :------------- | :-----: | :------: | :-------------------------------------------------------------------- |
-| `page`         |    1    |    ❌    | Current page number.                                                  |
-| `limit`        |   10    |    ❌    | Limit of results per page. You can also use `all` to get all players. |
-| `event_series` |   all   |    ❌    | Event series. `event group id`                                        |
-| `event`        |   all   |    ❌    | Specific event. `event id`                                            |
-| `region`       |   all   |    ❌    | Specific region. `na` `eu` `ap` `jp` `sa` `oce` `mn` `gc`             |
-| `country`      |   all   |    ❌    | Specific country. `co` `es` ...                                       |
-| `minrounds`    |   200   |    ❌    | Minimum number of rounds played.                                      |
-| `minrating`    |  1550   |    ❌    | Minimum rating.                                                       |
-| `agent`        |   all   |    ❌    | Specific agent. `astra` `jett` ...                                    |
-| `map`          |   all   |    ❌    | Specific map. `map id`                                                |
-| `timespan`     |   60d   |    ❌    | Specific time period. `30d` `60d` `90d` `all`                         |
+| Parameter      | Default | Description                                                           |
+| :------------- | :-----: | :-------------------------------------------------------------------- |
+| `page`         |    1    | Current page number.                                                  |
+| `limit`        |   10    | Limit of results per page. You can also use `all` to get all players. |
+| `event_series` |   all   | Event series. `event group id`                                        |
+| `event`        |   all   | Specific event. `event id`                                            |
+| `region`       |   all   | Specific region. `na` `eu` `ap` `jp` `sa` `oce` `mn` `gc`             |
+| `country`      |   all   | Specific country. `co` `es` ...                                       |
+| `minrounds`    |   200   | Minimum number of rounds played.                                      |
+| `minrating`    |  1550   | Minimum rating.                                                       |
+| `agent`        |   all   | Specific agent. `astra` `jett` ...                                    |
+| `map`          |   all   | Specific map. `map id`                                                |
+| `timespan`     |   60d   | Specific time period. `30d` `60d` `90d` `all`                         |
 
 ## Request example
 
