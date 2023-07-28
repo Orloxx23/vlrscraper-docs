@@ -44,7 +44,7 @@ export default function Player() {
           <form onSubmit={handleSubmit}>
             <div className={styles.searchbar}>
               <div className={styles.url}>
-                https://valorant-esports1.p.rapidapi.com/v1/players/
+                https://alert-puce-neckerchief.cyclic.app/api/v1/players/
                 <input
                   className={styles.input}
                   type="number"
@@ -64,7 +64,11 @@ export default function Player() {
             {player ? (
               <div className={styles.team}>
                 <div className={styles.teamlogo}>
-                  <img src={player.info.img} alt={player.info.user} draggable="false" />
+                  <img
+                    src={player.info.img}
+                    alt={player.info.user}
+                    draggable="false"
+                  />
                 </div>
                 <div className={styles.teamcontainer}>
                   <div className={styles.teaminfo}>

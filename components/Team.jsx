@@ -44,7 +44,7 @@ export default function Team() {
           <form onSubmit={handleSubmit}>
             <div className={styles.searchbar}>
               <div className={styles.url}>
-                https://valorant-esports1.p.rapidapi.com/v1/teams/
+                https://alert-puce-neckerchief.cyclic.app/api/v1/teams/
                 <input
                   className={styles.input}
                   type="number"
@@ -83,7 +83,11 @@ export default function Team() {
                     {team.results.slice(0, 2).map((match) => (
                       <div className={styles.match} key={match.event.name}>
                         <div className={styles.teamimg}>
-                          <img src={match.teams[0].logo} alt="" draggable="false" />
+                          <img
+                            src={match.teams[0].logo}
+                            alt=""
+                            draggable="false"
+                          />
                         </div>
 
                         <div className={styles.matchscore}>
@@ -92,7 +96,11 @@ export default function Team() {
                         </div>
 
                         <div className={styles.teamimg}>
-                          <img src={match.teams[1].logo} alt="" draggable="false" />
+                          <img
+                            src={match.teams[1].logo}
+                            alt=""
+                            draggable="false"
+                          />
                         </div>
                       </div>
                     ))}

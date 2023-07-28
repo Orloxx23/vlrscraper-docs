@@ -1,7 +1,7 @@
 export default async function handler(req, res) {
   const { id } = JSON.parse(req.body);
 
-  const url = `https://valorant-esports1.p.rapidapi.com/v1/players/${id}`;
+  const url = `https://alert-puce-neckerchief.cyclic.app/api/v1/players/${id}`;
 
   const options = {
     method: "GET",
