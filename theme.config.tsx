@@ -4,16 +4,16 @@ import { DocsThemeConfig } from 'nextra-theme-docs'
 const config: DocsThemeConfig = {
   logo: <span>Valorant Esports API v1.0.2</span>,
   project: {
-    link: 'https://github.com/Orloxx23/vlrscraper-docs',
+    link: 'https://github.com/Orloxx23/vlresports',
   },
   /*chat: {
     link: 'https://discord.com',
   },*/
-  docsRepositoryBase: 'https://github.com/Orloxx23/vlrscraper-docs/tree/main',
+  docsRepositoryBase: 'https://github.com/Orloxx23/vlresports',
   footer: {
     text: (
       <span>
-        MIT {new Date().getFullYear()} ©{' '}
+        Apache 2.0 {new Date().getFullYear()} ©{' '}
         <a href="https://orlandomm.net" target="_blank">
           Orloxx
         </a>
