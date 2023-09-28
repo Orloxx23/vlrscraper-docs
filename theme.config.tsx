@@ -14,7 +14,7 @@ const config: DocsThemeConfig = {
     text: (
       <span>
         MIT {new Date().getFullYear()} ©{' '}
-        <a href="https://orlandomm.me" target="_blank">
+        <a href="https://orlandomm.net" target="_blank">
           Orloxx
         </a>
         .
