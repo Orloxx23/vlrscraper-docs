@@ -1,5 +1,25 @@
 # What's new?
 
+## v1.0.3
+
+### Get all events.
+
+- `GET /api/v1/events`
+
+  - We will obtain all the events.
+
+### Get all matches.
+
+- `GET /api/v1/matches`
+
+  - We will get all the matches that are coming up.
+
+### Get all results.
+
+- `GET /api/v1/results`
+
+  - We will get all the results of the matches that have been played.
+
 ## v1.0.2
 
 ### Get all teams.
