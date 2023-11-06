@@ -2,7 +2,7 @@ import React from 'react'
 import { DocsThemeConfig } from 'nextra-theme-docs'
 
 const config: DocsThemeConfig = {
-  logo: <span>Valorant Esports API v1.0.2</span>,
+  logo: <span>Valorant Esports API v1.0.3</span>,
   project: {
     link: 'https://github.com/Orloxx23/vlresports',
   },
