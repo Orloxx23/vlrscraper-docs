@@ -5,10 +5,6 @@ export default async function handler(req, res) {
 
   const options = {
     method: "GET",
-    headers: {
-      "X-RapidAPI-Key": process.env.RAPIDAPI_KEY,
-      "X-RapidAPI-Host": process.env.RAPIDAPI_HOST,
-    },
   };
 
   try {

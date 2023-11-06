@@ -11,5 +11,11 @@
     "type": "page",
     "href": "https://orlandomm.net",
     "newWindow": true
+  },
+  "ko-fi":{
+    "title": "Support ↗",
+    "type": "page",
+    "href": "https://ko-fi.com/vlresports",
+    "newWindow": true
   }
 }
