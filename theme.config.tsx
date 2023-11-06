@@ -94,9 +94,6 @@ const config: DocsThemeConfig = {
       titleTemplate: "%s | Valorant Esports API",
     };
   },
-  toc: {
-    backToTop: true,
-  },
 };
 
 export default config;
