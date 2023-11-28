@@ -1,7 +1,7 @@
 export default async function handler(req, res) {
   const { id } = JSON.parse(req.body);
 
-  const url = `https://alert-puce-neckerchief.cyclic.app/api/v1/teams/${id}`;
+  const url = `https://vlr.orlandomm.net/api/v1/teams/${id}`;
 
   const options = {
     method: "GET",

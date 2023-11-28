@@ -44,7 +44,7 @@ export default function Team() {
           <form onSubmit={handleSubmit}>
             <div className={styles.searchbar}>
               <div className={styles.url}>
-                https://alert-puce-neckerchief.cyclic.app/api/v1/teams/
+                https://vlr.orlandomm.net/api/v1/teams/
                 <input
                   className={styles.input}
                   type="number"

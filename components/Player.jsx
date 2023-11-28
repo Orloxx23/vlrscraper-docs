@@ -44,7 +44,7 @@ export default function Player() {
           <form onSubmit={handleSubmit}>
             <div className={styles.searchbar}>
               <div className={styles.url}>
-                https://alert-puce-neckerchief.cyclic.app/api/v1/players/
+                https://vlr.orlandomm.net/api/v1/players/
                 <input
                   className={styles.input}
                   type="number"
