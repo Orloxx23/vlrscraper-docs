@@ -1,6 +1,7 @@
 import { useRouter } from "next/router";
 import type { DocsThemeConfig } from "nextra-theme-docs";
 import { useConfig } from "nextra-theme-docs";
+import Banner from "./components/Banner";
 
 const logo = (
   <div
@@ -10,16 +11,20 @@ const logo = (
       alignItems: "center",
     }}
   >
-    <img src="https://i.imgur.com/ZSMbOPL.png" width={64} height={64} />
+    <img src="/logo.png" width={64} height={64} />
     <span>Valorant Esports API v1.0.3</span>
   </div>
 );
 
 const config: DocsThemeConfig = {
+  banner: {
+    key: 'new-docs-2024',
+    text: <Banner />
+  },
   head: function useHead() {
     const { title } = useConfig();
     const { route } = useRouter();
-    const socialCard = "https://i.imgur.com/ZSMbOPL.png";
+    const socialCard = "/logo.png";
 
     return (
       <>
